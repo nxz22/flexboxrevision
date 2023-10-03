@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Stop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="sticky-header">
+        <img src="logo.png" alt="Mental Health Stop Logo" class="header-logo">
+        <div class="header-buttons">
+            <button class="nav-btn" onclick="location.href='index.html'"> Home Page </button>
+            <button class="nav-btn" onclick="location.href='understand.html'"> Recognize Your Struggles </button>
+            <button class="nav-btn" onclick="location.href='todo.html'"> Self-Help Techniques </button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section-header">
+            <div class="header-text">Mental Health Stop Home Page</div>
+            <img src="mental-healthcare.png" alt="Description of Image" class="header-image">
+        </div>
+       
+        <div class="content">
+            <div class="slider-section">
+                <h2>On a scale of 1-10, how are you doing today?</h2>
+                <input type="range" min="1" max="10" step="1" id="mood-slider">
+                <label for="mood-slider" id="slider-value">5</label>
+            </div>
+            <div class="summary">
+                <p>
+                    <strong>Mental health</strong> is as vital as our physical well-being, yet its significance often remains overshadowed in our fast-paced lives. Raising awareness about mental health challenges is not just about bringing light to the struggles many face silently every day, but also about <strong>destigmatizing the conversations</strong> surrounding it.
+                </p>
+                <p>
+                    It's crucial to recognize and accept that it's perfectly normal to not be okay sometimes. Life throws a myriad of challenges our way, and it's human to feel overwhelmed, anxious, or downcast. The primary objective of this site is not to provide a solution for mental health concerns but to emphasize the importance of <strong>understanding them</strong>. 
+                </p>
+                <p>
+                    By acknowledging our feelings and being conscious of our mental state, we take the first step towards self-compassion and healing. Remember, reaching out for help or seeking information is a testament to strength, not weakness. Let this platform be a gentle reminder that it's okay to seek understanding and <strong>prioritize your well-being</strong>.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+
+    <audio id="backgroundMusic" loop autoplay>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+    
+
+</body>
+
+<script>
+    const slider = document.getElementById('mood-slider');
+    const sliderValue = document.getElementById('slider-value');
+
+    slider.addEventListener('input', function() {
+        sliderValue.textContent = slider.value;
+    });
+</script>
+
+</html>
+

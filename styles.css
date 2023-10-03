@@ -1,0 +1,100 @@
+body {
+    font-family: 'Quattrocento Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+}
+
+.sticky-header {
+    display: flex; /* Flexbox Update */
+    align-items: center; /* Flexbox Update */
+    justify-content: flex-start; /* Flexbox Update */
+    padding: 10px 20px;
+    background-color: rgba(203, 239, 255, 0.8);
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-logo {
+    height: 80px;
+    width: auto;
+    margin-right: 40px;
+}
+
+.header-buttons {
+    display: flex; /* Flexbox Update */
+    gap: 10px; 
+}
+
+.nav-btn {
+    font-family: 'Quattrocento Sans', sans-serif;
+    background-color: white;
+    color: #007BFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; 
+}
+
+.nav-btn:hover {
+    background-color: #f5f5f5;
+}
+
+.container {
+    margin-top: 100px;
+    display: flex; /* Flexbox Update */
+    flex-direction: column; /* Flexbox Update */
+    align-items: center; /* Flexbox Update */
+}
+
+.section-header {
+    display: flex; /* Flexbox Update */
+    flex-direction: column; /* Flexbox Update */
+    align-items: center; /* Flexbox Update */
+    justify-content: center; /* Flexbox Update */
+    background-color: #ffffff;
+    color: #19455d;
+    padding: 20px 0;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.header-image {
+    height: 400px; 
+    width: auto;
+    margin-top: 20px;
+}
+
+.content {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex; /* Flexbox Update */
+    flex-direction: column; /* Flexbox Update */
+    gap: 20px;
+}
+
+.summary {
+    font-size: 18px;
+    color: #666;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.slider-section {
+    text-align: center; 
+    padding: 20px 0;
+    background-color: #f2f2f2; 
+}
+
+#backgroundMusic {
+    display: none;
+}
